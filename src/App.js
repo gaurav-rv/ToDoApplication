@@ -1,25 +1,35 @@
 import logo from './logo.svg';
+import './bootstrap.css';
 import './App.css';
+import { Component } from 'react';
+import { render } from '@testing-library/react';
+import FirstComponent from './components/learning-example/FirstComponent';
+import SecondComponent from './components/learning-example/SecondComponent';
+import Counter from './components/counter/Counter';
+import TodoApp from './components/todo/TodoApp';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Counter /> */}
+      <TodoApp/>
     </div>
   );
 }
 
 export default App;
+
+
+
+class LearningComponent extends Component{
+  render(){
+    return(
+      <div className="LearningComponents">
+      Hello World
+      <FirstComponent />
+      <SecondComponent/>
+    </div>
+    );
+  }
+}
