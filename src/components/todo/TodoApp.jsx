@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AuthenticationService from './AuthenticationService.js';
 import AuthenticatedRoute from './AuthenticatedRoute.js';
 import LoginComponent from './LoginComponent.jsx';
 import ListToDosComponent from './ListToDoComponent.js';
